@@ -2,13 +2,14 @@ import { useContext } from "react";
 
 import TaskContext from "./tasksContexts";
 import useAuth from "../auth/useAuth";
+import userAuthStore from "../auth/store";
 const useTask = () => useContext(TaskContext);
 
 const TaskList = () => {
   // const [tasks, setTasks] = useState<Task[]>([]);
 
   const { tasks, dispatch } = useTask();
-  const { user } = useAuth();
+  const { user } = userAuthStore();
 
   return (
     <>

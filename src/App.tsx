@@ -13,12 +13,13 @@ import { TaskProvider } from "./state-management/tasks";
 function App() {
   return (
     <>
-      <AuthProvider>
-        <TaskProvider>
-          <NavBar />
-          <HomePage />
-        </TaskProvider>
-      </AuthProvider>
+      {/* <AuthProvider> */}
+      <TaskProvider>
+        <Counter />
+        <NavBar />
+        <HomePage />
+      </TaskProvider>
+      {/* </AuthProvider> */}
     </>
   );
 }

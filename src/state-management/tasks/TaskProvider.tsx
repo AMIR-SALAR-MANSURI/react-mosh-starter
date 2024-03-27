@@ -8,6 +8,7 @@ interface AddTask {
   type: "ADD";
   task: Task;
 }
+1;
 interface DeleteTask {
   type: "DELETE";
   taskId: number;
